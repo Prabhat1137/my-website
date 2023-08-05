@@ -69,8 +69,8 @@ nav{
     border-radius: 4px;
   }
   .menu-list li:Hover{
-      border: 1px solid rgb(173, 170, 170);
-      background: #f9f2f2;
+      border: 1px solid rgb(193, 188, 192);
+      background: rgb(70, 57, 253);
   }
   
   .menu-list>li:hover>.sub-menu li{
@@ -195,19 +195,25 @@ nav{
         height: 100vh;
     }
 
-    #check:checked~.nav-mid>ul{
+    .nav-mid>ul{
         display: flex;
         flex-direction: column;
         position: fixed;
         height: 93.5vh;
-        width: 100vw;
+        width: 0vw;
         min-width: 300px;
         background: #a9f1f4;
+        margin-top: 5.5vh;
+        right: -100%;
+        text-align: center;
+        transition: all 1s ease-in-out;
+    }
+
+    #check:checked~.nav-mid>ul{
+        width: 100vw;
         margin-top: 6.5vh;
         right: 0px;
-        text-align: center;
-      
-        
+         
     }
 
     .nav-right
@@ -269,9 +275,7 @@ nav{
 
     #check:checked~.nav-mid>ul{
         
-        margin-top: 5vh;
-       
-        
+        margin-top: 5vh; 
     }
 }
 
@@ -281,9 +285,6 @@ nav{
         font-size: 1.6rem;
         height: 11vh;
         background: #9900ff;
-    }
-    .nav-mid>ul{
-        display: none;
     }
     .menu-list li{
         border: none;
@@ -310,17 +311,6 @@ nav{
         height: auto;
     }
 
-    #check:checked~.nav-mid>ul{
-        /* display: flex;
-        position: fixed; */
-        height: 93.5vh;
-        /* width: 100vw; */
-        /* background: #cdabab; */
-        margin-top: 5vh;
-        /* right: 0px;
-        text-align: center;
-        line-height: 7vh; */
-        
-    }
+  
    
 }
