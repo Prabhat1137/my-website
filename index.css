@@ -25,7 +25,7 @@ header{
 }
 .main{
     height:100vh;
-    background: #f8f5f5;
+    background: #adc4f3;
     background-image: url("resources/mainbg.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -184,16 +184,28 @@ nav{
     }
 
     #check:checked~.nav-mid>ul{
-        display: block;
+        display: flex;
+        flex-direction: column;
         position: fixed;
         height: 93.5vh;
-        width: 500px;
+        width: 100vw;
+        min-width: 300px;
         background: #cdabab;
         margin-top: 6.5vh;
         right: 0px;
+        left: 0px;
         text-align: center;
         line-height: 7vh;
         
+    }
+
+    .nav-right
+    {
+        width: 90%;
+    }
+    .nav-left img{
+        width: 30%;
+        height: auto;
     }
 
    
@@ -213,6 +225,31 @@ nav{
     .main{
         /* background: #c9f8f0; */
         height: 100vh;
+    }
+
+    .nav-right
+    {
+        width: 90%;
+    }
+    .nav-left img{
+        width: 25%;
+        height: auto;
+    }
+
+    .menu-icon i{
+        display: block;
+        margin-right: 20px;
+        color: white;
+    }
+    .nav-right ul li a{
+        color: white;
+    }
+
+    #check:checked~.nav-mid>ul{
+        
+        margin-top: 5vh;
+       
+        
     }
 }
 
@@ -242,14 +279,22 @@ nav{
     .nav-right ul li a{
         color: white;
     }
+    .nav-right
+    {
+        width: 90%;
+    }
+    .nav-left img{
+        width: 30%;
+        height: auto;
+    }
 
     #check:checked~.nav-mid>ul{
-        display: block;
+        display: flex;
         position: fixed;
         height: 93.5vh;
-        width: 500px;
+        width: 100vw;
         background: #cdabab;
-        margin-top: 6.5vh;
+        margin-top: 5vh;
         right: 0px;
         text-align: center;
         line-height: 7vh;
