@@ -11,6 +11,7 @@ a{
     text-decoration: none;
     color: black;
 }
+
 #check{
     display: none;
 }
@@ -26,7 +27,7 @@ header{
 .main{
     height:100vh;
     background: #adc4f3;
-    background-image: url("resources/mainbg.jpg");
+    background-image: url('resources/mainbg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -172,6 +173,17 @@ nav{
     .menu-list li{
         border: none;
         margin-right: 20px;
+        color: white;
+        /* background: #000; */
+    }
+    .nav-right .menu-list li{
+        border: none;
+        margin-right: 20px;
+        color: white;
+        /* background: #000; */
+    }
+    .menu-list>li{
+        color: black;
     }
     .menu-icon i{
         display: block;
@@ -190,12 +202,11 @@ nav{
         height: 93.5vh;
         width: 100vw;
         min-width: 300px;
-        background: #cdabab;
+        background: #a9f1f4;
         margin-top: 6.5vh;
         right: 0px;
-        left: 0px;
         text-align: center;
-        line-height: 7vh;
+      
         
     }
 
@@ -206,6 +217,17 @@ nav{
     .nav-left img{
         width: 30%;
         height: auto;
+    }
+
+    .menu-list li:hover{
+        background: #4856ee;
+    }
+    .menu-list li:hover>.sub-menu{
+        background: #5764fa;
+    }
+
+    .sub-menu{
+        background: #000;
     }
 
    
@@ -289,15 +311,15 @@ nav{
     }
 
     #check:checked~.nav-mid>ul{
-        display: flex;
-        position: fixed;
+        /* display: flex;
+        position: fixed; */
         height: 93.5vh;
-        width: 100vw;
-        background: #cdabab;
+        /* width: 100vw; */
+        /* background: #cdabab; */
         margin-top: 5vh;
-        right: 0px;
+        /* right: 0px;
         text-align: center;
-        line-height: 7vh;
+        line-height: 7vh; */
         
     }
    
